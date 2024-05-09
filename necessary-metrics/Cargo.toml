@@ -1,0 +1,16 @@
+[package]
+name = "necessary-metrics"
+version = { workspace = true }
+edition = { workspace = true }
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = { workspace = true }
+syn = { workspace = true }
+quote = { workspace = true }
+
+[dev-dependencies]
+pretty_assertions = { workspace = true }
+metrics = { workspace = true }

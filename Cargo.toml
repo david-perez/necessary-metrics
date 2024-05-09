@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = [
+    "necessary-metrics",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+proc-macro2 = "1"
+metrics = "0.22"
+quote = "1"
+syn = { version = "2", features = ["extra-traits"] }
+necessary-metrics = { path = "./necessary-metrics" }
+pretty_assertions = "1"
